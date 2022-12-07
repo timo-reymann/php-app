@@ -6,14 +6,15 @@ ARG USER_UID=1002
 ARG USER_GUID=1002
 # renovate: datasource=github-releases depName=nicolas-van/multirun
 ARG MULTIRUN_VERSION=1.1.3
-# renovate: datasource=repology depName=npackd_stable/org.nginx.Nginx versioning=loose
-ARG NGINX_VERSION=1.23.2
+# renovate: datasource=repology depName=debian_11/org.nginx.Nginx versioning=loose
+ARG NGINX_VERSION=1.18.0
 
 # Install base
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
+        lsb-release \
         gnupg2 && \
-    echo "deb https://nginx.org/packages/debian/ buster nginx" > /etc/apt/sources.list.d/nginx.list && \
+    echo "deb https://nginx.org/packages/debian/ `lsb_release -cs` nginx" > /etc/apt/sources.list.d/nginx.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62 && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
@@ -26,7 +27,7 @@ RUN apt-get update && \
     rm -rf /etc/nginx/conf.d/* && \
     rm -rf /var/lib/apt/lists/* && \
     # Install multirun
-    curl -Ls https://github.com/nicolas-van/multirun/releases/download/${MULTIRUN_VERSION}/multirun-glibc-${MULTIRUN_VERSION}.tar.gz | tar xvz && \
+    curl -Ls https://github.com/nicolas-van/multirun/releases/download/${MULTIRUN_VERSION}/multirun-x86_64-linux-gnu-${MULTIRUN_VERSION}.tar.gz | tar xvz && \
     chmod +x multirun && \
     mv multirun /bin && \
     # Setup unprivileged user
