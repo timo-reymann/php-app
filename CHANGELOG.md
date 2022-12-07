@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/timo-reymann/php-app/compare/1.0.1...1.0.2) (2022-12-07)
+
+
+### Bug Fixes
+
+* Fix multirun download ([3089a75](https://github.com/timo-reymann/php-app/commit/3089a75d0d65ade3eeb000f717f8660e3f9843e8))
+
 ## [1.0.1](https://github.com/timo-reymann/php-app/compare/1.0.0...1.0.1) (2022-12-07)
 
 
