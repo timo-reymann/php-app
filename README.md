@@ -36,7 +36,7 @@ For basic usage with no further extensions, you just copy your sources to /app
 
 ```Dockerfile
 FROM timoreymann/php-app
-COPY ./code /app
+COPY --chown=application:application ./code /app
 ```
 
 ### Build your image with sources and install composer dependencies
@@ -48,7 +48,7 @@ The `composer-install` script downloads the installer from GitHub, installs the 
 ```Dockerfile
 FROM timoreymann/php-app
 WORKDIR /app
-COPY ./code ./
+COPY --chown=application:application ./code ./
 RUN composer-install
 ```
 
@@ -60,6 +60,6 @@ To make it work, nginx needs to route all requests to the index.php, if the file
 ```Dockerfile
 FROM timoreymann/php-app
 WORKDIR /app
-COPY ./code ./
+COPY --chown=application:application ./code ./
 RUN composer-install && configure-index-rewrite
 ```
