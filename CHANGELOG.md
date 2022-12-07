@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/timo-reymann/php-app/compare/1.0.4...1.1.0) (2022-12-07)
+
+
+### Features
+
+* Add composer install script ([d63d73d](https://github.com/timo-reymann/php-app/commit/d63d73df6dc29ce00b2f88382c2bd96a0131152f))
+
 ## [1.0.4](https://github.com/timo-reymann/php-app/compare/1.0.3...1.0.4) (2022-12-07)
 
 
