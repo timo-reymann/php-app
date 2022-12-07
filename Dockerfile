@@ -1,11 +1,13 @@
-FROM php:8-fpm
+FROM php:8.1.13-fpm
 
 EXPOSE 8080
 
 ARG USER_UID=1002
 ARG USER_GUID=1002
-ARG VERSION_MULTIRUN=1.0.0
-ARG VERSION_NGINX=1.14.2
+# renovate: datasource=github-releases depName=nicolas-van/multirun
+ARG MULTIRUN_VERSION=1.0.0
+# renovate: datasource=repology depName=npackd_stable/org.nginx.Nginx versioning=loose
+ARG NGINX_VERSION=1.23.2
 
 # Install base
 RUN apt-get update && \
