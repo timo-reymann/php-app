@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/timo-reymann/php-app/compare/1.2.0...1.2.1) (2022-12-07)
+
+
+### Bug Fixes
+
+* Fix configure-index escaping ([3ec5e8c](https://github.com/timo-reymann/php-app/commit/3ec5e8cb0ebb5c3ec8bca7d7f46f0efe4fad1e52))
+
 ## [1.2.0](https://github.com/timo-reymann/php-app/compare/1.1.0...1.2.0) (2022-12-07)
 
 
