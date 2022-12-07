@@ -7,7 +7,7 @@ ARG USER_UID=1002
 ARG USER_GUID=1002
 # renovate: datasource=github-releases depName=nicolas-van/multirun
 ARG MULTIRUN_VERSION=1.1.3
-# renovate: datasource=repology depName=debian_12/org.nginx.Nginx versioning=loose
+# renovate: datasource=repology depName=debian_12/nginx versioning=loose
 ARG NGINX_VERSION=1.22.1
 
 # Install base
