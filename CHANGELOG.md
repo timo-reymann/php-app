@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/timo-reymann/php-app/compare/1.0.2...1.0.3) (2022-12-07)
+
+
+### Bug Fixes
+
+* Fix nginx download ([0c1c96f](https://github.com/timo-reymann/php-app/commit/0c1c96f88862cd7e941f2985f2123fa3a79bbdb7))
+
 ## [1.0.2](https://github.com/timo-reymann/php-app/compare/1.0.1...1.0.2) (2022-12-07)
 
 
