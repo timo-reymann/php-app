@@ -22,7 +22,7 @@ RUN apt-get update && \
         libzip-dev \
         libonig-dev \
         git \
-        nginx=${VERSION_NGINX}* && \
+        nginx=${NGINX_VERSION}* && \
     rm -rf /etc/nginx/conf.d/* && \
     rm -rf /var/lib/apt/lists/* && \
     # Install multirun
