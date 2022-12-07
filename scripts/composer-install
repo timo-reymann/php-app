@@ -1,0 +1,10 @@
+#!/bin/bash
+set +e
+CWD=$PWD
+
+cd /tmp
+curl -Ls https://raw.githubusercontent.com/composer/getcomposer.org/76a7060ccb93902cd7576b67264ad91c8a2700e2/web/installer | php 
+echo "$(php composer.phar --version) installed"
+cd $CWD
+php /tmp/composer.phar --no-progress install
+rm /tmp/composer.phar

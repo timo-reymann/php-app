@@ -73,6 +73,9 @@ RUN apt-get update && \
 COPY --chown=application:application nginx*.conf /etc/nginx/
 COPY --chown=application:application php_fpm.ini /usr/local/etc/php-fpm.conf
 
+# Copy over scripts
+COPY --chown=application:application scripts/* /usr/bin/
+
 USER application
 
 # Setup entrypoint and pwd
