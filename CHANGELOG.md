@@ -1,3 +1,10 @@
+## [1.2.0](https://github.com/timo-reymann/php-app/compare/1.1.0...1.2.0) (2022-12-07)
+
+
+### Features
+
+* Add index rewrite script ([90232ea](https://github.com/timo-reymann/php-app/commit/90232ea313e857be3c9968e19ecbf304b0cf362f))
+
 ## [1.1.0](https://github.com/timo-reymann/php-app/compare/1.0.4...1.1.0) (2022-12-07)
 
 
