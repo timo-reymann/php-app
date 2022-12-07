@@ -26,7 +26,7 @@ RUN apt-get update && \
     rm -rf /etc/nginx/conf.d/* && \
     rm -rf /var/lib/apt/lists/* && \
     # Install multirun
-    curl -Ls https://github.com/nicolas-van/multirun/releases/download/${VERSION_MULTIRUN}/multirun-glibc-${VERSION_MULTIRUN}.tar.gz | tar xvz && \
+    curl -Ls https://github.com/nicolas-van/multirun/releases/download/${MULTIRUN_VERSION}/multirun-glibc-${MULTIRUN_VERSION}.tar.gz | tar xvz && \
     chmod +x multirun && \
     mv multirun /bin && \
     # Setup unprivileged user
