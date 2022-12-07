@@ -1,3 +1,10 @@
+## [1.3.0](https://github.com/timo-reymann/php-app/compare/1.2.1...1.3.0) (2022-12-07)
+
+
+### Features
+
+* Upgrade nginx to 1.22 ([975c108](https://github.com/timo-reymann/php-app/commit/975c10818cdb6ccfb21cbb7cd8c0c247beb99dd5))
+
 ## [1.2.1](https://github.com/timo-reymann/php-app/compare/1.2.0...1.2.1) (2022-12-07)
 
 
