@@ -7,8 +7,8 @@ ARG USER_UID=1002
 ARG USER_GUID=1002
 # renovate: datasource=github-releases depName=nicolas-van/multirun
 ARG MULTIRUN_VERSION=1.1.3
-# renovate: datasource=repology depName=debian_11/org.nginx.Nginx versioning=loose
-ARG NGINX_VERSION=1.18.0
+# renovate: datasource=repology depName=debian_12/org.nginx.Nginx versioning=loose
+ARG NGINX_VERSION=1.22.1
 
 # Install base
 RUN apt-get update && \
@@ -17,6 +17,7 @@ RUN apt-get update && \
         gnupg2 && \
     echo "deb https://nginx.org/packages/debian/ `lsb_release -cs` nginx" > /etc/apt/sources.list.d/nginx.list && \
     apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ABF5BD827BD9BF62 && \
+    apt-get update -y && \
     apt-get upgrade -y && \
     apt-get install --no-install-recommends -y \
         zip \

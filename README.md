@@ -43,7 +43,7 @@ COPY --chown=application:application ./code /app
 
 When you use composer for external dependencies you can easily install them in the build process.
 
-The `composer-install` script downloads the installer from GitHub, installs the depency and removes the phar file.
+The `composer-install` script downloads the installer from GitHub, installs the depencies and removes the phar file.
 
 ```Dockerfile
 FROM timoreymann/php-app
@@ -54,7 +54,7 @@ RUN composer-install
 
 ### Configure index.php for PHP-based routing
 
-When you build a modern web app with PHP, chances are high that you will have routing within your index.php. 
+When you build a modern web app with PHP, chances are high that you will have routing within your index.php.
 To make it work, nginx needs to route all requests to the index.php, if the file does not exist in the webroot (e.g. assets).
 
 ```Dockerfile
@@ -63,3 +63,5 @@ WORKDIR /app
 COPY --chown=application:application ./code ./
 RUN composer-install && configure-index-rewrite
 ```
+
+
