@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/timo-reymann/php-app/compare/1.0.3...1.0.4) (2022-12-07)
+
+
+### Bug Fixes
+
+* Downgrade nginx ([31861d0](https://github.com/timo-reymann/php-app/commit/31861d05654abe09b5b3c631cffb85db1bdb47f6))
+
 ## [1.0.3](https://github.com/timo-reymann/php-app/compare/1.0.2...1.0.3) (2022-12-07)
 
 
