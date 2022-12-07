@@ -61,5 +61,5 @@ To make it work, nginx needs to route all requests to the index.php, if the file
 FROM timoreymann/php-app
 WORKDIR /app
 COPY ./code ./
-RUN configure-index-rewrite
+RUN composer-install && configure-index-rewrite
 ```
