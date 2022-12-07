@@ -1,5 +1,6 @@
 FROM php:8.1.13-fpm
 
+HEALTHCHECK --start-period=5s --retries=4 --timeout=10s CMD curl -f http://localhost:8080 > /dev/null || exit 1
 EXPOSE 8080
 
 ARG USER_UID=1002

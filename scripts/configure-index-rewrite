@@ -1,0 +1,13 @@
+#!/bin/bash
+set +e
+
+cat <<EOF > /etc/nginx/conf.d/rewrite.conf
+# First try to lookup asset, otherwise try index.html
+location / {
+    try_files $uri $uri/ @rewrites;
+}
+
+location @rewrites {
+    rewrite ^(.+)$ /index.php last;
+}
+EOF
