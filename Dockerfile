@@ -1,3 +1,16 @@
+FROM busybox as sources
+WORKDIR /files
+RUN mkdir -p etc/nginx && \
+    mkdir -p usr/local/etc && \
+    mkdir -p usr/bin
+
+# Copy over configuration
+COPY nginx*.conf etc/nginx/
+COPY php_fpm.ini usr/local/etc/php-fpm.conf
+
+# Copy over scripts
+COPY scripts/* usr/bin/
+
 FROM php:8.1.13-fpm
 
 HEALTHCHECK --start-period=5s --retries=4 --timeout=10s CMD curl -f http://localhost:8080 > /dev/null || exit 1
@@ -71,15 +84,11 @@ RUN apt-get update && \
     rm -rf /usr/local/etc/php-fpm* && \
     mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 
-# Copy over configuration
-COPY --chown=application:application nginx*.conf /etc/nginx/
-COPY --chown=application:application php_fpm.ini /usr/local/etc/php-fpm.conf
-
-# Copy over scripts
-COPY --chown=application:application scripts/* /usr/bin/
+COPY --from=sources --chown=application:application /files /
 
 USER application
 
 # Setup entrypoint and pwd
 WORKDIR /app
 ENTRYPOINT ["/bin/multirun", "-v", "nginx", "php-fpm"]
+
