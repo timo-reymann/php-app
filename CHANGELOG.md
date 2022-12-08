@@ -1,3 +1,11 @@
+## [1.4.0](https://github.com/timo-reymann/php-app/compare/1.3.0...1.4.0) (2022-12-08)
+
+
+### Features
+
+* Deny composer files to be served ([3bb8f97](https://github.com/timo-reymann/php-app/commit/3bb8f970b1d964a220f3a307dbc6b180d03aceec))
+* Reduce image layers by moving files into busybox temp container ([e8239c3](https://github.com/timo-reymann/php-app/commit/e8239c3f4acdbb2ac5dc5b7234bab16316130a29))
+
 ## [1.3.0](https://github.com/timo-reymann/php-app/compare/1.2.1...1.3.0) (2022-12-07)
 
 
