@@ -1,3 +1,10 @@
+## [1.5.0](https://github.com/timo-reymann/php-app/compare/1.4.0...1.5.0) (2022-12-08)
+
+
+### Features
+
+* Allow passing arguments to composer install script ([de7d382](https://github.com/timo-reymann/php-app/commit/de7d38250bce4bf22362835e9425208e44c5f14e))
+
 ## [1.4.0](https://github.com/timo-reymann/php-app/compare/1.3.0...1.4.0) (2022-12-08)
 
 
