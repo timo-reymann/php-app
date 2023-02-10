@@ -1,3 +1,10 @@
+## [1.7.0](https://github.com/timo-reymann/php-app/compare/1.6.0...1.7.0) (2023-02-10)
+
+
+### Features
+
+* Add new gh workflow ([b82903b](https://github.com/timo-reymann/php-app/commit/b82903b24f8e4cbc5107203234a3b1fc2c0de817))
+
 ## [1.6.0](https://github.com/timo-reymann/php-app/compare/1.5.0...1.6.0) (2022-12-08)
 
 
