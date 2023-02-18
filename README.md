@@ -74,6 +74,18 @@ COPY --chown=application:application ./code ./
 RUN composer-install && configure-index-rewrite
 ```
 
+## Contributing
+
+I love your input! I want to make contributing to this project as easy and transparent as possible, whether it's:
+
+- Reporting a bug
+- Discussing the current state of the configuration
+- Submitting a fix
+- Proposing new features
+- Becoming a maintainer
+
+To get started please read the [Contribution Guidelines](./CONTRIBUTING.md).
+
 ## Development
 
 ### Requirements
