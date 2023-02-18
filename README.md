@@ -18,26 +18,6 @@ php-app
 ## Requirements
 - [Docker](https://docs.docker.com/get-docker/)
 
-## Components
-The image consists of:
-
-- multirun - Small util for executing multiple processes with proper signal handling
-- PHP 8 FPM - Execution of PHP files
-- nginx - Serve evaluated files from FPM
-
-PHP 8 extensions that are common are also pre-installed:
-
-- mysqli
-- gd
-- freetype
-- jpeg
-- pdo_mysql
-- zip
-- opcache
-
-### Ports
-- 8080: HTTP-Server
-
 ## Usage
 
 ### Basic
@@ -73,6 +53,28 @@ WORKDIR /app
 COPY --chown=application:application ./code ./
 RUN composer-install && configure-index-rewrite
 ```
+
+## Documentation
+
+### Components
+The image consists of:
+
+- multirun - Small util for executing multiple processes with proper signal handling
+- PHP 8 FPM - Execution of PHP files
+- nginx - Serve evaluated files from FPM
+
+PHP 8 extensions that are common are also pre-installed:
+
+- mysqli
+- gd
+- freetype
+- jpeg
+- pdo_mysql
+- zip
+- opcache
+
+### Ports
+- 8080: HTTP-Server
 
 ## Contributing
 
