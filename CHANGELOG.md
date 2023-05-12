@@ -1,3 +1,10 @@
+## [1.8.0](https://github.com/timo-reymann/php-app/compare/1.7.2...1.8.0) (2023-05-12)
+
+
+### Features
+
+* **deps:** Update to PHP 8.2.6 ([8068a70](https://github.com/timo-reymann/php-app/commit/8068a70561e0fb5575c06696abf34dad4205a049))
+
 ## [1.7.2](https://github.com/timo-reymann/php-app/compare/1.7.1...1.7.2) (2023-05-02)
 
 
