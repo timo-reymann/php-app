@@ -11,7 +11,7 @@ COPY php_fpm.ini usr/local/etc/php-fpm.conf
 # Copy over scripts
 COPY scripts/* usr/bin/
 
-FROM php:8.2.6-fpm
+FROM php:8.2.7-fpm
 
 HEALTHCHECK --start-period=5s --retries=4 --timeout=10s CMD curl -f http://localhost:8080 > /dev/null || exit 1
 EXPOSE 8080
