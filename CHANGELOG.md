@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/timo-reymann/php-app/compare/1.8.0...1.8.1) (2023-06-16)
+
+
+### Bug Fixes
+
+* **deps:** update php docker tag to v8.2.7 ([#13](https://github.com/timo-reymann/php-app/issues/13)) ([dbff899](https://github.com/timo-reymann/php-app/commit/dbff8994753a3317f544a130d0c5fb3f9acd5e3e))
+
 ## [1.8.0](https://github.com/timo-reymann/php-app/compare/1.7.2...1.8.0) (2023-05-12)
 
 
