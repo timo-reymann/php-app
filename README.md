@@ -7,7 +7,7 @@ php-app
 [![Continuous build and release docker image](https://github.com/timo-reymann/php-app/actions/workflows/main.yml/badge.svg)](https://github.com/timo-reymann/php-app/actions/workflows/main.yml)
 
 <p align="center">
-	<img width="300" src="./.github/images/logo.png">
+	<img width="300" src="https://github.com/timo-reymann/php-app/raw/main/.github/images/logo.png">
     <br />
     Docker image for running PHP apps in a single container with nginx and PHP-fpm
 </p>
