@@ -12,7 +12,15 @@ COPY php_fpm.ini usr/local/etc/php-fpm.conf
 COPY scripts/* usr/bin/
 
 FROM php:8.2.11-fpm
-
+LABEL org.opencontainers.image.title="php-app"
+LABEL org.opencontainers.image.description="Docker image for running PHP apps in a single container with nginx and PHP-fpm"
+LABEL org.opencontainers.image.ref.name="main"
+LABEL org.opencontainers.image.licenses='MIT'
+LABEL org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>"
+LABEL org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>"
+LABEL org.opencontainers.image.url="https://github.com/timo-reymann/php-app"
+LABEL org.opencontainers.image.documentation="https://github.com/timo-reymann/php-app"
+LABEL org.opencontainers.image.source="https://github.com/timo-reymann/php-app.git"
 HEALTHCHECK --start-period=5s --retries=4 --timeout=10s CMD curl -f http://localhost:8080 > /dev/null || exit 1
 EXPOSE 8080
 
@@ -91,4 +99,3 @@ USER application
 # Setup entrypoint and pwd
 WORKDIR /app
 ENTRYPOINT ["/bin/multirun", "-v", "nginx", "php-fpm"]
-
