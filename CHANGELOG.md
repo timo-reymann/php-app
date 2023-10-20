@@ -1,3 +1,10 @@
+## [1.9.0](https://github.com/timo-reymann/php-app/compare/1.8.1...1.9.0) (2023-10-20)
+
+
+### Features
+
+* Add OCI labels ([1746839](https://github.com/timo-reymann/php-app/commit/17468391085b617435d8ce26636da2705f495823))
+
 ## [1.8.1](https://github.com/timo-reymann/php-app/compare/1.8.0...1.8.1) (2023-06-16)
 
 
