@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/timo-reymann/php-app/compare/1.9.1...1.9.2) (2023-11-16)
+
+
+### Bug Fixes
+
+* Fix fastcgi too large headers for specific apps ([ab6e0ec](https://github.com/timo-reymann/php-app/commit/ab6e0ec52201d6941738c7cf65206d9f2d0d1405))
+
 ## [1.9.1](https://github.com/timo-reymann/php-app/compare/1.9.0...1.9.1) (2023-10-28)
 
 
