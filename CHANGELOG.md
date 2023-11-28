@@ -1,3 +1,10 @@
+## [1.10.0](https://github.com/timo-reymann/php-app/compare/1.9.2...1.10.0) (2023-11-28)
+
+
+### Features
+
+* **deps:** update php docker tag to v8.3.0 ([#19](https://github.com/timo-reymann/php-app/issues/19)) ([ad22a49](https://github.com/timo-reymann/php-app/commit/ad22a49017c46c595e5a422a9c1930084f7f5141))
+
 ## [1.9.2](https://github.com/timo-reymann/php-app/compare/1.9.1...1.9.2) (2023-11-16)
 
 
