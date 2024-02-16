@@ -11,7 +11,7 @@ COPY php_fpm.ini usr/local/etc/php-fpm.conf
 # Copy over scripts
 COPY scripts/* usr/bin/
 
-FROM php:8.3.2-fpm
+FROM php:8.3.3-fpm
 LABEL org.opencontainers.image.title="php-app"
 LABEL org.opencontainers.image.description="Docker image for running PHP apps in a single container with nginx and PHP-fpm"
 LABEL org.opencontainers.image.ref.name="main"
