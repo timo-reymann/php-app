@@ -1,3 +1,10 @@
+## [1.11.0](https://github.com/timo-reymann/php-app/compare/1.10.6...1.11.0) (2024-06-21)
+
+
+### Features
+
+* Optimize pm process handling ([253fc47](https://github.com/timo-reymann/php-app/commit/253fc47c479e28da6a7b6fed3f982c2c81f15758))
+
 ## [1.10.6](https://github.com/timo-reymann/php-app/compare/1.10.5...1.10.6) (2024-06-09)
 
 
