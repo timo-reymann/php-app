@@ -2,14 +2,15 @@ FROM busybox as sources
 WORKDIR /files
 RUN mkdir -p etc/nginx \
     && mkdir -p usr/local/etc \
-    && mkdir -p usr/bin
+    && mkdir -p bin \
+    && mkdir -p etc/nginx/conf.d
 
 # Copy over configuration
 COPY nginx*.conf etc/nginx/
 COPY php_fpm.ini etc/php/php-fpm.conf
 
 # Copy over scripts
-COPY scripts/* usr/bin/
+COPY scripts/* bin/
 
 FROM chainguard/wolfi-base
 LABEL org.opencontainers.image.title="php-app"
@@ -40,9 +41,24 @@ RUN apk add --no-cache curl \
 
 # Install php
 # renovate: datasource=docker depName=php
-ARG PHP_VERSION=8.3
+ARG PHP_VERSION=8.2
 ENV PHP_VERSION=${PHP_VERSION}
-RUN apk add --no-cache nginx curl php-${PHP_VERSION} php-${PHP_VERSION}-opcache php-${PHP_VERSION}-fpm php-${PHP_VERSION}-zip php-${PHP_VERSION}-gd \
+RUN apk add --no-cache \
+      php-${PHP_VERSION} \
+      php-${PHP_VERSION}-opcache \
+      php-${PHP_VERSION}-openssl \
+      php-${PHP_VERSION}-mysqli \
+      php-${PHP_VERSION}-pdo \
+      php-${PHP_VERSION}-mbstring \
+      php-${PHP_VERSION}-phar \
+      php-${PHP_VERSION}-fpm \
+      php-${PHP_VERSION}-zip \
+      php-${PHP_VERSION}-gd \
+      php-${PHP_VERSION}-simplexml \
+      php-${PHP_VERSION}-curl \
+      php-${PHP_VERSION}-ctype \
+      php-${PHP_VERSION}-mysqlnd \
+      php-${PHP_VERSION}-pdo_mysql \
     && adduser -D -u ${USER_UID} application \
     # Create /app
     && mkdir -p /app  \
