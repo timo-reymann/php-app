@@ -55,6 +55,8 @@ RUN apk add --no-cache \
       php-${PHP_VERSION}-zip \
       php-${PHP_VERSION}-gd \
       php-${PHP_VERSION}-simplexml \
+      php-${PHP_VERSION}-xml \
+      php-${PHP_VERSION}-dom \
       php-${PHP_VERSION}-curl \
       php-${PHP_VERSION}-ctype \
       php-${PHP_VERSION}-mysqlnd \

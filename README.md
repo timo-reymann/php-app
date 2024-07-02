@@ -68,6 +68,7 @@ PHP 8 extensions that are common are also pre-installed:
 
 - curl
 - ctype
+- dom
 - freetype
 - gd
 - jpeg
@@ -79,6 +80,7 @@ PHP 8 extensions that are common are also pre-installed:
 - pdo_mysql
 - phar
 - simplexml
+- xml
 - zip
 
 ### Ports
