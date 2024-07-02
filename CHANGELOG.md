@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/timo-reymann/php-app/compare/1.11.0...2.0.0) (2024-07-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use wolfi base image
+
+### Features
+
+* Use wolfi base image ([2576ebe](https://github.com/timo-reymann/php-app/commit/2576ebe74b812103ef37ea7fa0a1794182a2a081))
+
 ## [1.11.0](https://github.com/timo-reymann/php-app/compare/1.10.6...1.11.0) (2024-06-21)
 
 
