@@ -1,3 +1,11 @@
+## [2.0.1](https://github.com/timo-reymann/php-app/compare/2.0.0...2.0.1) (2024-07-02)
+
+
+### Bug Fixes
+
+* Fix utils shell ([5fd4843](https://github.com/timo-reymann/php-app/commit/5fd484389ccf95034c4c64c941e0c29ff29c13b9))
+* Install missing php extensions for wolfi ([8f6df8a](https://github.com/timo-reymann/php-app/commit/8f6df8a8971400f585e2796f7730575a1d1b2ad1))
+
 ## [2.0.0](https://github.com/timo-reymann/php-app/compare/1.11.0...2.0.0) (2024-07-02)
 
 
