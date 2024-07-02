@@ -66,13 +66,20 @@ The image consists of:
 
 PHP 8 extensions that are common are also pre-installed:
 
-- mysqli
-- gd
+- curl
+- ctype
 - freetype
+- gd
 - jpeg
-- pdo_mysql
-- zip
+- mysqli
+- mbstring
 - opcache
+- openssl
+- pdo
+- pdo_mysql
+- phar
+- simplexml
+- zip
 
 ### Ports
 - 8080: HTTP-Server
