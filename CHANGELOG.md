@@ -1,3 +1,10 @@
+## [2.1.0](https://github.com/timo-reymann/php-app/compare/2.0.1...2.1.0) (2024-07-02)
+
+
+### Features
+
+* Add dom and simplexml ([57aaeb6](https://github.com/timo-reymann/php-app/commit/57aaeb6974f76d9444d018e8664cca76d26b2028))
+
 ## [2.0.1](https://github.com/timo-reymann/php-app/compare/2.0.0...2.0.1) (2024-07-02)
 
 
