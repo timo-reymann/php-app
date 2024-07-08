@@ -1,3 +1,10 @@
+## [2.2.0](https://github.com/timo-reymann/php-app/compare/2.1.0...2.2.0) (2024-07-08)
+
+
+### Features
+
+* Upgrade to php 8.3 ([043f682](https://github.com/timo-reymann/php-app/commit/043f682a5e48e27e26412368684317803dc2a9ed))
+
 ## [2.1.0](https://github.com/timo-reymann/php-app/compare/2.0.1...2.1.0) (2024-07-02)
 
 
