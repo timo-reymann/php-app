@@ -1,4 +1,4 @@
-FROM busybox as sources
+FROM busybox AS sources
 WORKDIR /files
 RUN mkdir -p etc/nginx \
     && mkdir -p usr/local/etc \
@@ -41,7 +41,7 @@ RUN apk add --no-cache curl \
 
 # Install php
 # renovate: datasource=docker depName=php
-ARG PHP_VERSION=8.2
+ARG PHP_VERSION=8.3
 ENV PHP_VERSION=${PHP_VERSION}
 RUN apk add --no-cache \
       php-${PHP_VERSION} \
