@@ -1,3 +1,14 @@
+## [3.0.0](https://github.com/timo-reymann/php-app/compare/2.2.0...3.0.0) (2025-09-20)
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade to php 8.4
+
+### Features
+
+* Add explicit layers for config and binary ([023bf8f](https://github.com/timo-reymann/php-app/commit/023bf8f10814e8adafe72253abdf14e22c5c999c))
+* Upgrade to php 8.4 ([1e3e9c7](https://github.com/timo-reymann/php-app/commit/1e3e9c727eed55f5bb88a7ed867b281e3a098438))
+
 ## [2.2.0](https://github.com/timo-reymann/php-app/compare/2.1.0...2.2.0) (2024-07-08)
 
 
