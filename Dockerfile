@@ -73,7 +73,8 @@ RUN apk add --no-cache \
         /var/lib/nginx/logs \
         /app
 
-COPY --from=sources --chown=application:application /files /
+COPY --from=sources --chown=application:application /files/etc /etc
+COPY --from=sources --chown=application:application /files/bin /bin
 
 USER application
 
