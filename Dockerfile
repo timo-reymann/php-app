@@ -13,7 +13,8 @@ COPY php_fpm.ini etc/php/php-fpm.conf
 COPY scripts/* bin/
 
 FROM chainguard/wolfi-base
-LABEL org.opencontainers.image.title="php-app"
+LABEL 
+LABEL org.opencontainers.image.licenses="mit"org.opencontainers.image.title="php-app"
 LABEL org.opencontainers.image.description="Docker image for running PHP apps in a single container with nginx and PHP-fpm"
 LABEL org.opencontainers.image.ref.name="main"
 LABEL org.opencontainers.image.licenses='MIT'
