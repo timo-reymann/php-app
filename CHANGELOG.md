@@ -1,3 +1,9 @@
+## [3.1.0](https://github.com/timo-reymann/php-app/compare/3.0.0...3.1.0) (2026-03-01)
+
+### Features
+
+* Add SBOM ([25e842b](https://github.com/timo-reymann/php-app/commit/25e842b3e5e8d981cbb4a2e06df3fd075bb74f2a))
+
 ## [3.0.0](https://github.com/timo-reymann/php-app/compare/2.2.0...3.0.0) (2025-09-20)
 
 ### ⚠ BREAKING CHANGES
