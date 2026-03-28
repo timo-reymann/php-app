@@ -13,20 +13,22 @@ COPY php_fpm.ini etc/php/php-fpm.conf
 COPY scripts/* bin/
 
 FROM chainguard/wolfi-base
-LABEL org.opencontainers.image.title="php-app"
-LABEL org.opencontainers.image.description="Docker image for running PHP apps in a single container with nginx and PHP-fpm"
-LABEL org.opencontainers.image.ref.name="main"
-LABEL org.opencontainers.image.licenses='MIT'
-LABEL org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>"
-LABEL org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>"
-LABEL org.opencontainers.image.url="https://github.com/timo-reymann/php-app"
-LABEL org.opencontainers.image.documentation="https://github.com/timo-reymann/php-app"
-LABEL org.opencontainers.image.source="https://github.com/timo-reymann/php-app.git"
+LABEL org.opencontainers.image.title="php-app" \
+      org.opencontainers.image.description="Docker image for running PHP apps in a single container with nginx and PHP-fpm" \
+      org.opencontainers.image.ref.name="main" \
+      org.opencontainers.image.licenses='MIT' \
+      org.opencontainers.image.vendor="Timo Reymann <mail@timo-reymann.de>" \
+      org.opencontainers.image.authors="Timo Reymann <mail@timo-reymann.de>" \
+      org.opencontainers.image.url="https://github.com/timo-reymann/php-app" \
+      org.opencontainers.image.documentation="https://github.com/timo-reymann/php-app" \
+      org.opencontainers.image.source="https://github.com/timo-reymann/php-app.git"
+
 HEALTHCHECK --start-period=2s --retries=4 --timeout=10s CMD curl -f http://localhost:8080 > /dev/null || exit 1
+
 EXPOSE 8080
 
-ARG USER_UID=1002
-ARG USER_GUID=1002
+ARG USER_UID=1002 \
+    USER_GUID=1002
 
 # Install nginx
 RUN apk add --no-cache nginx
