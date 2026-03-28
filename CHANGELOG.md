@@ -1,3 +1,9 @@
+## [3.1.1](https://github.com/timo-reymann/php-app/compare/3.1.0...3.1.1) (2026-03-28)
+
+### Bug Fixes
+
+* Optimize container layers for meta ([d347752](https://github.com/timo-reymann/php-app/commit/d347752ce21513a5c2f82bf07261f30c4b2e0b7b))
+
 ## [3.1.0](https://github.com/timo-reymann/php-app/compare/3.0.0...3.1.0) (2026-03-01)
 
 ### Features
