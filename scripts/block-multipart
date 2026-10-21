@@ -1,0 +1,21 @@
+#!/bin/sh
+set +e
+
+# Map at http level, required before the check can run in the server block
+if ! grep -q 'block_multipart' /etc/nginx/nginx_http.conf; then
+    cat <<EOF >> /etc/nginx/nginx_http.conf
+# Block multipart requests. For use during CVE-2026-109618 / CVE-2026-109619.
+# Remove this map and block-multipart.conf again after PHP is patched.
+map \$http_content_type \$block_multipart {
+    default       0;
+    "~*multipart" 1;
+}
+EOF
+fi
+
+cat <<EOF > /etc/nginx/conf.d/block-multipart.conf
+# Reject multipart requests before they reach PHP
+if (\$block_multipart) {
+    return 403;
+}
+EOF
