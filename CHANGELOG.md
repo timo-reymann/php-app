@@ -1,3 +1,9 @@
+## [3.2.1](https://github.com/timo-reymann/php-app/compare/3.2.0...3.2.1) (2026-10-21)
+
+### Bug Fixes
+
+* Rebuild image with 8.4 ([d7efdc7](https://github.com/timo-reymann/php-app/commit/d7efdc7e5507c79a227df33b348e9d63840fc9cd))
+
 ## [3.2.0](https://github.com/timo-reymann/php-app/compare/3.1.1...3.2.0) (2026-10-21)
 
 ### Features
