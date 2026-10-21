@@ -1,3 +1,13 @@
+## [4.0.0](https://github.com/timo-reymann/php-app/compare/3.2.1...4.0.0) (2026-10-21)
+
+### ⚠ BREAKING CHANGES
+
+* Upgrade to php 8.5 (#30)
+
+### Features
+
+* Upgrade to php 8.5 ([#30](https://github.com/timo-reymann/php-app/issues/30)) ([818dee7](https://github.com/timo-reymann/php-app/commit/818dee7d804a7c235fc957b5de65d7a9bd84804a))
+
 ## [3.2.1](https://github.com/timo-reymann/php-app/compare/3.2.0...3.2.1) (2026-10-21)
 
 ### Bug Fixes
