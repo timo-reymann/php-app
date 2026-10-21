@@ -1,3 +1,9 @@
+## [4.0.1](https://github.com/timo-reymann/php-app/compare/4.0.0...4.0.1) (2026-10-21)
+
+### Bug Fixes
+
+* Mitigate CVE-2026-109618 and CVE-2026-109619 (PHP2Shell) ([#31](https://github.com/timo-reymann/php-app/issues/31)) ([c419358](https://github.com/timo-reymann/php-app/commit/c4193581be2d471c506bc19d7dba05ed0f417290))
+
 ## [4.0.0](https://github.com/timo-reymann/php-app/compare/3.2.1...4.0.0) (2026-10-21)
 
 ### ⚠ BREAKING CHANGES
