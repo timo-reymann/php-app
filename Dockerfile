@@ -43,7 +43,7 @@ RUN apk add --no-cache curl \
 
 # Install php
 # renovate: datasource=docker depName=php
-ARG PHP_VERSION=8.5
+ARG PHP_VERSION=8.4
 ENV PHP_VERSION=${PHP_VERSION}
 RUN apk add --no-cache \
       php-${PHP_VERSION} \
