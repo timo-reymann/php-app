@@ -55,6 +55,22 @@ COPY --chown=application:application ./code ./
 RUN composer-install && configure-index-rewrite
 ```
 
+### Block multipart requests temporarily
+
+For the CVEs [CVE-2026-109618 and CVE-2026-109619](https://www.cms-admins.de/news/php2shell-kritische-php-sicherheitsluecken-cve-2026-109618/) ("PHP2Shell") you can block every request with a multipart content type before it reaches PHP.
+This breaks all file uploads.
+Use it only until your PHP version contains the fix.
+
+```Dockerfile
+FROM timoreymann/php-app
+WORKDIR /app
+COPY --chown=application:application ./code ./
+RUN block-multipart
+```
+
+The script keeps the setting after a rebuilt image only if you run the script again.
+Remove the `RUN block-multipart` line from your Dockerfile after PHP published the fix and rebuild.
+
 ## Documentation
 
 ### Components
