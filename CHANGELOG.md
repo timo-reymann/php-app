@@ -1,3 +1,9 @@
+## [3.2.0](https://github.com/timo-reymann/php-app/compare/3.1.1...3.2.0) (2026-10-21)
+
+### Features
+
+* Update to php 8.5 ([e19792f](https://github.com/timo-reymann/php-app/commit/e19792f8da6bdfe7b02f7b2392bffabdfdb0b822))
+
 ## [3.1.1](https://github.com/timo-reymann/php-app/compare/3.1.0...3.1.1) (2026-03-28)
 
 ### Bug Fixes
