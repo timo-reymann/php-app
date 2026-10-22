@@ -46,7 +46,7 @@ RUN apk add --no-cache curl \
 ARG PHP_VERSION=8.5
 ENV PHP_VERSION=${PHP_VERSION}
 RUN apk add --no-cache \
-      php-${PHP_VERSION} \
+      "php-${PHP_VERSION}>=8.5.12" \
       php-${PHP_VERSION}-openssl \
       php-${PHP_VERSION}-mysqli \
       php-${PHP_VERSION}-pdo \
