@@ -1,3 +1,9 @@
+## [4.0.2](https://github.com/timo-reymann/php-app/compare/4.0.1...4.0.2) (2026-10-22)
+
+### Bug Fixes
+
+* pin php to >=8.5.12 for CVE fix ([#32](https://github.com/timo-reymann/php-app/issues/32)) ([e4f57f5](https://github.com/timo-reymann/php-app/commit/e4f57f55df8bf12c8de774131f9bcb6fcbce6e29))
+
 ## [4.0.1](https://github.com/timo-reymann/php-app/compare/4.0.0...4.0.1) (2026-10-21)
 
 ### Bug Fixes
