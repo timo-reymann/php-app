@@ -1,3 +1,9 @@
+## [4.1.0](https://github.com/timo-reymann/php-app/compare/4.0.2...4.1.0) (2026-10-25)
+
+### Features
+
+* Add tag ranges ([b9dade3](https://github.com/timo-reymann/php-app/commit/b9dade30fda7aa18bd50079f103c62040292d200))
+
 ## [4.0.2](https://github.com/timo-reymann/php-app/compare/4.0.1...4.0.2) (2026-10-22)
 
 ### Bug Fixes
